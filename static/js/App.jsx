@@ -24,16 +24,14 @@ export default class App extends React.Component {
         return (
             <Layout className="layout">
             <Header>
-                <div className="logo" />
                 <Menu
                     theme="dark"
                     mode="horizontal"
                     defaultSelectedKeys={['1']}
-                    style={{ lineHeight: '64px', textAlign: 'center' }}
+                    style={{ lineHeight: '64px' }}
                 >
                     <Menu.Item key="1">Início</Menu.Item>
-                    <Menu.Item key="2">Sobre</Menu.Item>
-                    <Menu.Item key="3">Contato</Menu.Item>
+                    <Menu.Item disabled>Simples TODO list feito com Flask e React.</Menu.Item>
                 </Menu>
             </Header>
             <Content style={{ padding: '0 50px' }}>
@@ -67,7 +65,7 @@ export default class App extends React.Component {
             </Content>
             <Footer>
             <Footer style={{ textAlign: 'center' }}>
-                Feito com <Icon type="heart" theme="filled" style={{ color: "#f5222d" }} /> por Alcides Dias.
+                Feito com <Icon type="heart" theme="filled" style={{ color: "#f5222d" }} /> por Alcides Dias
             </Footer>
             </Footer>
         </Layout>
